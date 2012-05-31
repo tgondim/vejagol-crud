@@ -1,0 +1,147 @@
+2012/05/18 21:21:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in J:\php-tools\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\php-tools\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gii')
+#1 J:\php-tools\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\php-tools\xampp\htdocs\vejagolcrud\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/vejagolcrud/index.php?r=gii
+---
+2012/05/18 21:24:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/admin".' in J:\php-tools\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\php-tools\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/admin')
+#1 J:\php-tools\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\php-tools\xampp\htdocs\vejagolcrud\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/vejagolcrud/index.php?r=user/admin
+---
+2012/05/18 21:45:07 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão  (trying to connect via tcp://vejagol.com:3306) (J:\php-tools\xampp\htdocs\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 J:\php-tools\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 J:\php-tools\xampp\htdocs\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 J:\php-tools\xampp\htdocs\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 J:\php-tools\xampp\htdocs\yii\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(2263): Jogo->getDbConnection()
+#6 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(394): model()
+#8 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(78): Jogo->getMetaData()
+#9 J:\php-tools\xampp\htdocs\vejagolcrud\protected\controllers\JogoController.php(141): Jogo->__construct()
+#10 J:\php-tools\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): JogoController->actionAdmin()
+#11 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): JogoController->runAction()
+#13 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): JogoController->filterAccessControl()
+#16 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(266): JogoController->runActionWithFilters()
+#19 J:\php-tools\xampp\htdocs\yii\framework\web\CWebApplication.php(276): JogoController->run()
+#20 J:\php-tools\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 J:\php-tools\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 J:\php-tools\xampp\htdocs\vejagolcrud\index.php(13): CWebApplication->run()
+REQUEST_URI=/vejagolcrud/index.php?r=jogo/admin
+in J:\php-tools\xampp\htdocs\vejagolcrud\protected\controllers\JogoController.php (141)
+in J:\php-tools\xampp\htdocs\vejagolcrud\index.php (13)
+2012/05/18 21:47:37 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão  (trying to connect via tcp://vejagol.com:3306) (J:\php-tools\xampp\htdocs\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 J:\php-tools\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 J:\php-tools\xampp\htdocs\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 J:\php-tools\xampp\htdocs\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 J:\php-tools\xampp\htdocs\yii\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(2263): Jogo->getDbConnection()
+#6 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(394): model()
+#8 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(78): Jogo->getMetaData()
+#9 J:\php-tools\xampp\htdocs\vejagolcrud\protected\controllers\JogoController.php(141): Jogo->__construct()
+#10 J:\php-tools\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): JogoController->actionAdmin()
+#11 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): JogoController->runAction()
+#13 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): JogoController->filterAccessControl()
+#16 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(266): JogoController->runActionWithFilters()
+#19 J:\php-tools\xampp\htdocs\yii\framework\web\CWebApplication.php(276): JogoController->run()
+#20 J:\php-tools\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 J:\php-tools\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 J:\php-tools\xampp\htdocs\vejagolcrud\index.php(13): CWebApplication->run()
+REQUEST_URI=/vejagolcrud/index.php?r=jogo/admin
+in J:\php-tools\xampp\htdocs\vejagolcrud\protected\controllers\JogoController.php (141)
+in J:\php-tools\xampp\htdocs\vejagolcrud\index.php (13)
+2012/05/18 21:47:58 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão  (trying to connect via tcp://vejagol.com:3306) (J:\php-tools\xampp\htdocs\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 J:\php-tools\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 J:\php-tools\xampp\htdocs\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 J:\php-tools\xampp\htdocs\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 J:\php-tools\xampp\htdocs\yii\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(2263): Jogo->getDbConnection()
+#6 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(394): model()
+#8 J:\php-tools\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(78): Jogo->getMetaData()
+#9 J:\php-tools\xampp\htdocs\vejagolcrud\protected\controllers\JogoController.php(141): Jogo->__construct()
+#10 J:\php-tools\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): JogoController->actionAdmin()
+#11 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): JogoController->runAction()
+#13 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): JogoController->filterAccessControl()
+#16 J:\php-tools\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 J:\php-tools\xampp\htdocs\yii\framework\web\CController.php(266): JogoController->runActionWithFilters()
+#19 J:\php-tools\xampp\htdocs\yii\framework\web\CWebApplication.php(276): JogoController->run()
+#20 J:\php-tools\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 J:\php-tools\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 J:\php-tools\xampp\htdocs\vejagolcrud\index.php(13): CWebApplication->run()
+REQUEST_URI=/vejagolcrud/index.php?r=jogo/admin
+in J:\php-tools\xampp\htdocs\vejagolcrud\protected\controllers\JogoController.php (141)
+in J:\php-tools\xampp\htdocs\vejagolcrud\index.php (13)
+2012/05/22 14:57:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home2/tgondim/public_html/crud/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home2/tgondim/public_html/crud/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home2/tgondim/public_html/crud/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home2/tgondim/public_html/crud/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home2/tgondim/public_html/crud/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home2/tgondim/public_html/crud/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home2/tgondim/public_html/crud/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /home2/tgondim/public_html/crud/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home2/tgondim/public_html/crud/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /home2/tgondim/public_html/crud/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('jogo/admin')
+#9 /home2/tgondim/public_html/crud/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home2/tgondim/public_html/crud/vejagolcrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/vejagolcrud/index.php?r=jogo/admin
+HTTP_REFERER=http://crud.vejagol.com/vejagolcrud/index.php
+---
+2012/05/22 14:59:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home2/tgondim/public_html/crud/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home2/tgondim/public_html/crud/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home2/tgondim/public_html/crud/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home2/tgondim/public_html/crud/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home2/tgondim/public_html/crud/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home2/tgondim/public_html/crud/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home2/tgondim/public_html/crud/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /home2/tgondim/public_html/crud/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home2/tgondim/public_html/crud/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /home2/tgondim/public_html/crud/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('jogo/admin')
+#9 /home2/tgondim/public_html/crud/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home2/tgondim/public_html/crud/vejagolcrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/vejagolcrud/index.php?r=jogo/admin
+HTTP_REFERER=http://crud.vejagol.com/vejagolcrud/index.php?r=site/login
+---
+2012/05/22 15:05:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "matheus".' in /home2/tgondim/public_html/crud/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home2/tgondim/public_html/crud/yii/framework/web/CController.php(271): CController->missingAction('matheus')
+#1 /home2/tgondim/public_html/crud/yii/framework/web/CWebApplication.php(276): CController->run('matheus')
+#2 /home2/tgondim/public_html/crud/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('melhorDaSemana/...')
+#3 /home2/tgondim/public_html/crud/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home2/tgondim/public_html/crud/vejagolcrud/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/vejagolcrud/index.php?r=melhorDaSemana/matheus
+---
